@@ -5,6 +5,7 @@
 }
 body {
   width: 100vw;
+  overflow: hidden;
 }
 .big-circle {
   height: 110vh;
@@ -30,17 +31,18 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
 header {
   width: 100%;
-  height: 12vh;
+  height: 15vh;
   position: relative;
   top: 0;
 }
 .logo-container {
   background-color: antiquewhite;
   display: inline-block;
-  height: 5vh;
-  width: 20vw;
+  height: 4vh;
+  width: 15vw;
   position: absolute;
   left: 3;
   top: 25%;
@@ -75,4 +77,67 @@ li input {
 }
 .button-container {
   padding-left: 2rem;
+}
+
+.content::before {
+  content: "";
+  background-color: #f3f2ff;
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -100000000;
+  right: -12vw;
+  top: -21vh;
+}
+.content::after {
+  content: "";
+  background-color: #f6e8fe;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10000000;
+  right: -16vw;
+  top: -17vh;
+}
+.hero {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.hero-text-content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-img-container {
+  width: 50%;
+  margin: 0 auto;
+}
+.hero-img-container img {
+  width: 100%;
+  box-shadow: 0 0 20px gray;
+  border-radius: 20px;
+}
+.hero-btns input {
+  width: 15vw;
+  height: 7vh;
+  border-radius: 10px;
+  border: none;
+  margin-right: 1rem;
+  color: white;
+  font-size: 1vw;
+}
+.hero-text-content {
+  color: #0f147f;
+  font-size: 1.5vw;
+}
+input[value="GET A FAST QUOTE"] {
+  background-color: #2e91e2;
+}
+input[value="CONTACT US"] {
+  background-color: #9866eb;
 }
