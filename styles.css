@@ -355,3 +355,115 @@ button {
   background-color: #2e91e2;
   color: white;
 }
+.review-container {
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  background-color: #f6f6ff;
+}
+.review-container .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reviews {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1.5fr 2fr;
+  gap: 1vw;
+}
+.review-box {
+  background-color: #eaeaf3;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+}
+.social-media-tab {
+  border-bottom: 1px solid #d4d4dc;
+  display: flex;
+  gap: 3vw;
+  padding-left: 1rem;
+}
+.social-media-tab div {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.social-media-tab p {
+  font-size: 1.3vw;
+}
+.social-media-tab div:hover {
+  border-bottom: 2px solid #404042;
+  overflow: hidden;
+}
+.entry-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+}
+
+.entry-box p {
+  font-size: 1.5vw;
+}
+.entry-box b {
+  font-size: 2vw;
+  margin-right: 0.5rem;
+}
+.entry-box text {
+  margin-left: 0.5rem;
+  font-size: 1vw;
+}
+.review-records {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.review-records > div {
+  width: 30%;
+  font-size: 1vw;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vw;
+  background-color: #eaeaf3;
+}
+.review-records > div > strong {
+  font-size: 1.5vw;
+  font-style: italic;
+}
+.review-records text {
+  color: gray;
+  vertical-align: baseline;
+}
+
+.Google-tag {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: start;
+  gap: 1vh;
+}
+.Google-tag div {
+  line-height: 0.4;
+}
+.Google-tag strong {
+  color: #4080ee;
+  font-size: 1vw;
+}
+.Google-tag p {
+  color: gray;
+  font-size: 0.5vw;
+}
+.Google-tag img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.star img {
+  width: 1.2vw;
+}
+.review-records p {
+  line-height: 1.5vw;
+}
