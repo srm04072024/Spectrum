@@ -355,11 +355,18 @@ button {
   background-color: #2e91e2;
   color: white;
 }
-.review-container {
+.section-3 {
   height: 90vh;
+  background-color: #f6f6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.review-container {
+  height: 90%;
   display: grid;
   grid-template-rows: 1fr 2.5fr;
-  background-color: #f6f6ff;
+  gap: 1vw;
 }
 .review-container .heading {
   display: flex;
@@ -466,4 +473,54 @@ button {
 }
 .review-records p {
   line-height: 1.5vw;
+}
+.banner-2 {
+  width: 100vw;
+  height: 35vh;
+  background-image: url("./Assets/banner-img.png");
+  background-size: 100vw 35vh;
+  background-color: #6787f5;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner-2 div {
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+.link-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.link-container a {
+  height: 15vh;
+  font-size: 1.2vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+a:hover {
+  background-color: #0f147f;
+  color: white;
+}
+a:hover::after {
+  content: "";
+
+  border-top: 1.3vw solid #0f147f;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  position: absolute;
+  bottom: -1.2vw;
+}
+.data-container {
+  height: 50vw;
 }
