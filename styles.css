@@ -195,6 +195,7 @@ input[value="CONTACT US"] {
 .img-text img {
   width: 100%;
 }
+.data-container p,
 .img-text div {
   line-height: 1.5;
   text-align: justify;
@@ -522,5 +523,31 @@ a:hover::after {
   bottom: -1.2vw;
 }
 .data-container {
-  height: 50vw;
+  height: 70vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.data-container > div {
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2vw;
+  align-items: center;
+}
+.data-container img {
+  width: 100%;
+  height: 100%;
+}
+.data-container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.data-container h5 {
+  font-size: 2.2vw;
+  color: #0f147f;
+  font-weight: bold;
 }
